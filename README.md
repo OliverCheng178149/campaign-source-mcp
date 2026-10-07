@@ -55,7 +55,9 @@ cards (`.md`, `.txt`, `.json`, `.yaml`, `.yml`), top-level module directories,
 optional root routers, and optional `_full_source*.md` page-anchored caches.
 Arbitrary top-level directories work via `search_campaign_sources` or
 `search_campaign_module(module="your-directory", query="...")`; existing
-book/module aliases remain available.
+book/module aliases remain available. See
+[docs/building-a-source-library.md](docs/building-a-source-library.md) for one
+way to build a library from material you are entitled to use.
 
 ## Optional installer
 
