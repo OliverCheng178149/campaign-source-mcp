@@ -1,0 +1,28 @@
+{
+  "name": "campaign-source-mcp",
+  "version": "0.1.0",
+  "description": "Local MCP server for campaign module/source-card routing and lookup.",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "campaign-source-mcp": "src/index.js"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "selftest": "node src/index.js --selftest",
+    "test:integration": "node --test test/integration/*.test.js",
+    "demo": "node --test test/demo.test.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.5",
+    "zod": "^3.25.76"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OliverCheng178149/campaign-source-mcp.git"
+  }
+}
