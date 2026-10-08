@@ -784,7 +784,7 @@ function sourceTriggerLookup(root, context, options = {}) {
 function buildServer() {
   const server = new McpServer({
     name: "campaign-source-mcp",
-    version: "0.1.0"
+    version: "0.1.1"
   });
 
   server.tool(

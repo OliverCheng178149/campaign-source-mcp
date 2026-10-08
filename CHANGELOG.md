@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 0.1.1 - 2026-10-08
 
 - Add `docs/building-a-source-library.md`: a workflow and file skeleton for
   building a private source library from material you are entitled to use.
