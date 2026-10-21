@@ -1,6 +1,6 @@
 {
   "name": "campaign-source-mcp",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Local MCP server for campaign module/source-card routing and lookup.",
   "type": "module",
   "private": true,
@@ -14,7 +14,7 @@
     "demo": "node --test test/demo.test.js"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.17.5",
+    "@modelcontextprotocol/sdk": "^1.32.1",
     "zod": "^3.25.76"
   },
   "engines": {
