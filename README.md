@@ -6,7 +6,33 @@ Released under the [MIT License](LICENSE). No books or existing campaign data
 are bundled. Bring your own source cards and keep private campaign data in a
 separate source directory.
 
-## Install independently
+## Install from npm
+
+Requires Node.js >=18. Point your MCP host at the published package; `npx`
+downloads it on first start. Pin the version so an update never changes your
+server unannounced:
+
+```json
+{
+  "mcpServers": {
+    "campaign-source": {
+      "command": "npx",
+      "args": ["-y", "campaign-source-mcp@VERSION"],
+      "env": {
+        "CAMPAIGN_SOURCE_PATH": "/absolute/path/your-source-library"
+      }
+    }
+  }
+}
+```
+
+Replace `VERSION` with the release you want, for example the latest on
+[npm](https://www.npmjs.com/package/campaign-source-mcp). Alternatively run
+`npm install -g campaign-source-mcp` and use `"command": "campaign-source-mcp"` with no `args`.
+The package includes `examples/synthetic-library` for a book-free trial; the tests live in this
+repository.
+
+## Install from source
 
 Requires Node.js >=18 and npm. Python 3 is needed only for the optional installer.
 `rg` (ripgrep) is optional; the runtime has a JavaScript search fallback.

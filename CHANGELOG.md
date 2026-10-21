@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.3 - 2026-10-22
+
+- Publish to npm: drop `"private": true`, add a `files` list so the package
+  carries the server, docs and synthetic examples and the optional installer but not the tests, and
+  add keywords, author, homepage and issue links.
+- README: install from npm with a pinned `npx` version, or globally.
+
 ## 0.1.2 - 2026-10-22
 
 - Update `@modelcontextprotocol/sdk` to 1.32.1 and refresh the lockfile;
