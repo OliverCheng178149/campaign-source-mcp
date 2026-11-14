@@ -162,7 +162,8 @@ test("published numeric parameter descriptions explain their enforced ranges", a
       if (schema.type !== "integer" && schema.type !== "number") continue;
       assert.ok(schema.description, `${tool.name}.${name} needs a description`);
       for (const edge of [schema.minimum, schema.maximum]) {
-        if (edge !== undefined) assert.ok(schema.description.includes(String(edge)), `${tool.name}.${name} omits ${edge}`);
+        // zod 4 publishes the safe-integer range on every .int(); that is not a limit worth repeating in prose.
+        if (edge !== undefined && Math.abs(edge) !== Number.MAX_SAFE_INTEGER) assert.ok(schema.description.includes(String(edge)), `${tool.name}.${name} omits ${edge}`);
       }
     }
   }
